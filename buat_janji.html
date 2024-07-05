@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Janji - Rumah Sakit Sehat Sentosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rumah Sakit Sehat Sentosa</h1>
+            <nav>
+                <ul>
+                    <li><a href="utama.html">Daftar Dokter</a></li>
+                    <li><a href="buat_janji.html">Buat Janji</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="appointment">
+            <h2>Buat Janji</h2>
+            <form id="appointmentForm" action="process.php" method="post">
+                <label for="name">Nama Pasien:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="doctor">Pilih Dokter:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Pilih Dokter</option>
+                    <option value="gigi">Dokter Gigi</option>
+                    <option value="mata">Dokter Mata</option>
+                    <option value="kandungan">Dokter Kandungan</option>
+                    <option value="anak">Dokter Anak</option>
+                    <option value="tht">Dokter THT</option>
+                    <option value="umum">Dokter Umum</option>
+                </select>
+
+                <label for="day">Pilih Hari:</label>
+                <select id="day" name="day" required>
+                    <option value="" disabled selected>Pilih Hari</option>
+                    <option value="Senin">Senin</option>
+                    <option value="Selasa">Selasa</option>
+                    <option value="Rabu">Rabu</option>
+                    <option value="Kamis">Kamis</option>
+                    <option value="Jumat">Jumat</option>
+                    <option value="Sabtu">Sabtu</option>
+                    <option value="Minggu">Minggu</option>
+                </select>
+
+                <button type="submit">Buat Janji</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Rumah Sakit Sehat Sentosa. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
